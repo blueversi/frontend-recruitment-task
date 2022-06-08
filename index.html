@@ -25,6 +25,10 @@
     />
 
     <link rel="stylesheet" href="./dist/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b12abb0a00.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="card">
@@ -36,16 +40,23 @@
           protection for modern and legacy inftastructures and SaaS platforms,
           managed bia a single app with no hardware required.
         </p>
-        <button class="button button-default">Button</button>
+        <button data-modal="modal-one" class="button button-default">
+          Button
+        </button>
       </div>
     </section>
 
-    <div>
-      <h1>Alert!</h1>
-      <p>
-        You have clicked <span class="bolder">X times</span> to related button
-      </p>
-      <span>X</span>
+    <div class="modal" id="modal-one">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h1>Alert!</h1>
+        <p>
+          You have clicked <span class="bolder">X times</span> to related button
+        </p>
+        <button class="modal-close modal-exit">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
     </div>
   </body>
 </html>
