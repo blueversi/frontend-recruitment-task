@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAEA,WACE,qBAHgB","file":"main.css","sourcesContent":["$testGulp: #000000;\r\n\r\n.testWatch {\r\n  background-color: $testGulp;\r\n}\r\n"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}
