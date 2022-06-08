@@ -1,0 +1,9 @@
+// Mixin
+// Roundend corners
+
+@mixin roundedCorners($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
