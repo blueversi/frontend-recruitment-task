@@ -1,0 +1,1 @@
+const modals=document.querySelectorAll("[data-modal");modals.forEach(l=>{l.addEventListener("click",e=>{e.preventDefault();const t=document.getElementById(l.dataset.modal),a=(t.classList.add("open"),t.querySelectorAll(".modal-exit"));a.forEach(e=>{e.addEventListener("click",e=>{e.preventDefault(),t.classList.remove("open")})})})});
