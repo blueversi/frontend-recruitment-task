@@ -1,0 +1,17 @@
+// Styles
+// Layout
+
+// Imports
+@import '../base/variables';
+@import '../base/mixins';
+
+html,
+body {
+  font-family: $sans;
+  font-size: $default;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10px;
+}

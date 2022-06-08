@@ -1,2 +1,39 @@
 // Styles
 // Card
+
+// Imports
+@import '../base/variables';
+@import '../base/mixins';
+
+// Styles
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: $maxWidth;
+  margin: 0 auto;
+
+  h1 {
+    font-size: $extra;
+  }
+
+  p {
+    font-size: $regular;
+  }
+
+  &-image {
+    text-align: center;
+    width: 40%;
+    height: 360px;
+    background-image: url('../../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg');
+    background-size: cover;
+    margin: 50px;
+  }
+
+  &-content {
+    text-align: justify;
+    width: 30%;
+    margin: 50px;
+  }
+}
