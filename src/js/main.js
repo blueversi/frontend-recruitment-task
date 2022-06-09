@@ -1,13 +1,14 @@
-var counter = localStorage.setItem('clickCounter', '0');
-console.log(localStorage.getItem('clickCounter'));
+let counter = new Counter('btnClickCounter', 0);
 
-const modals = document.querySelectorAll('[data-modal');
+const modals = document.querySelectorAll('[data-modal]');
 
 modals.forEach((trigger) => {
   trigger.addEventListener('click', (event) => {
     event.preventDefault();
     const modal = document.getElementById(trigger.dataset.modal);
     modal.classList.add('open');
+    counter.increase(1);
+    console.log(counter.getValue());
 
     const exits = modal.querySelectorAll('.modal-exit');
     exits.forEach((exit) => {
