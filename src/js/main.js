@@ -1,3 +1,6 @@
+var counter = localStorage.setItem('clickCounter', '0');
+console.log(localStorage.getItem('clickCounter'));
+
 const modals = document.querySelectorAll('[data-modal');
 
 modals.forEach((trigger) => {
