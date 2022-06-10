@@ -1,6 +1,10 @@
+const app = document.getElementById('root');
+
 let counter = new Counter('btnClickCounter', 0);
 
 const modals = document.querySelectorAll('[data-modal]');
+
+// let htmlCounterValue = document.getElementById('counterValue');
 
 modals.forEach((trigger) => {
   trigger.addEventListener('click', (event) => {
@@ -9,6 +13,8 @@ modals.forEach((trigger) => {
     modal.classList.add('open');
     counter.increase(1);
     console.log(counter.getValue());
+
+    // htmlCounterValue.innerHTML = counter.getValue();
 
     const exits = modal.querySelectorAll('.modal-exit');
     exits.forEach((exit) => {

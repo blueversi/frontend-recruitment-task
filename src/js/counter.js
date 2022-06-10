@@ -25,5 +25,3 @@ class Counter {
     localStorage.setItem(this.counterName, this.counter);
   }
 }
-//
-//
