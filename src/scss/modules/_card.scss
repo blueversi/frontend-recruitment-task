@@ -14,6 +14,28 @@
   width: $maxWidth;
   margin: 0 auto;
 
+  @include phone-only() {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  @include tablet-portrait-only() {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  @include tablet-only() {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  @include laptop-only() {
+    width: 100%;
+    margin-top: 50px;
+  }
+
   h1 {
     font-size: $extra;
   }
@@ -26,14 +48,65 @@
     text-align: center;
     width: 40%;
     height: 360px;
-    background-image: url('../../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg');
+    background-image: url('../../../images/extra.jpg');
     background-size: cover;
     margin: 50px;
+
+    @include phone-only() {
+      width: $phoneWidth;
+      height: $phoneWidth;
+      background-image: url('../../../images/phone.jpg');
+      background-size: cover;
+      margin: 0 auto;
+    }
+
+    @include tablet-portrait-only() {
+      width: $tabletPortraitWidth;
+      height: $tabletPortraitWidth;
+      background-image: url('../../../images/tablet-portrait.jpg');
+      background-size: cover;
+      margin: 0 auto;
+    }
+
+    @include tablet-only() {
+      width: $tabletWidth;
+      height: 521px;
+      background-image: url('../../../images/tablet.jpg');
+      background-size: cover;
+      margin: 0 auto;
+    }
+
+    @include laptop-only() {
+      width: 480px;
+      height: 319px;
+      background-image: url('../../../images/laptop.jpg');
+      background-size: cover;
+      margin: 0 auto;
+    }
   }
 
   &-content {
     text-align: justify;
     width: 30%;
     margin: 50px;
+
+    @include phone-only() {
+      width: $phoneWidth;
+      margin: 0 auto;
+    }
+
+    @include tablet-portrait-only() {
+      width: $tabletPortraitWidth;
+      margin: 0 auto;
+    }
+
+    @include tablet-only() {
+      width: $tabletWidth;
+      margin: 0 auto;
+    }
+
+    @include laptop-only() {
+      margin: 0 auto;
+    }
   }
 }

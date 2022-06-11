@@ -1,13 +1,29 @@
 // Mixin
 // Media Query
 
-@mixin breakpoints($min, $max) {
-  @media only screen and (min-width: $min) and (max-width: $max-1) {
+@mixin phone-only() {
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
     @content;
   }
 }
-@mixin breakpointsMin($min) {
-  @media only screen and (min-width: $min) {
+
+@mixin tablet-portrait-only() {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet-only() {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin laptop-only() {
+  @media only screen and (min-width: 1024px) and (max-width: 1201px) {
+    @content;
+  }
+}
+@mixin desktop-only() {
+  @media only screen and (min-width: 1201px) {
     @content;
   }
 }

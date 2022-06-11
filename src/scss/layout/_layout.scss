@@ -6,7 +6,7 @@
 @import '../base/mixins';
 
 * {
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 html,
@@ -17,5 +17,5 @@ body {
 }
 
 section {
-  padding: 10px;
+  margin-top: 10px;
 }
