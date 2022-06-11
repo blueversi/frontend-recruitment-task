@@ -31,6 +31,7 @@ class Modal {
     this.setCssClass(this.modal, 'modal');
     this.setCssClass(this.modalBackground, 'modal-bg modal-exit');
     this.setCssClass(this.modalContainer, 'modal-container');
+    this.setCssClass(this.resetButton, 'button button-default');
     this.setCssClass(this.resetDiv, 'hidden');
     this.setCssClass(this.exitButton, 'modal-close modal-exit');
   }
