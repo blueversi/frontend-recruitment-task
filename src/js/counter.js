@@ -16,7 +16,7 @@ class Counter {
   }
 
   increase(number) {
-    this.counter = parseInt(this.counter + number);
+    this.counter = parseInt(this.counter) + number;
     localStorage.setItem(this.counterName, this.counter);
   }
 

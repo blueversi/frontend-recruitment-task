@@ -5,6 +5,10 @@
 @import '../base/variables';
 @import '../base/mixins';
 
+* {
+  transition: 0.3s;
+}
+
 html,
 body {
   font-family: $sans;
