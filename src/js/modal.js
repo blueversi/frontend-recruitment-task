@@ -94,10 +94,10 @@ class Modal {
     this.modalContainer.appendChild(this.modalTitle);
     this.modalContainer.appendChild(this.modalContent);
     this.modalContainer.appendChild(this.exitButton);
+    this.modalContent.appendChild(this.counterValue);
     this.resetDiv.appendChild(this.resetMsg);
     this.resetDiv.appendChild(this.resetButton);
     this.modalContent.appendChild(this.resetDiv);
-    this.modalContent.appendChild(this.counterValue);
   }
 
   prepare() {
@@ -107,10 +107,6 @@ class Modal {
     this.setCloseListener();
     this.addCounterResetListener();
     this.appendAll();
-  }
-
-  getModalTrigger() {
-    return this.openButton;
   }
 
   getModal() {
